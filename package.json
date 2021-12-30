@@ -1,0 +1,11 @@
+{
+  "name": "tutorial-vault",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "gmahechas",
+  "license": "MIT",
+  "dependencies": {
+    "node-vault": "^0.9.22",
+    "typescript": "^4.5.4"
+  }
+}
