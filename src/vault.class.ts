@@ -17,11 +17,6 @@ export class Vault {
 		this._client = vault(options);
 	}
 
-	status = async () => {
-		console.log(this);
-		return await this.client.status();
-	}
-
 	write = async (path: string, data: any) => {
 		return await this.client.write(path, data);
 	}
@@ -38,7 +33,4 @@ export class Vault {
 		return await this.client.request(requestOptions);
 	}
 
-	auths = async () => {
-		return await this.client.auths();
-	}
 }
