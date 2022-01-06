@@ -12,7 +12,7 @@ export class Vault {
 		const options: vault.VaultOptions = {
 			apiVersion: 'v1',
 			endpoint: 'http://10.1.0.229:8200',
-			token: 's.jtG9aWhEZ6fX6CGbppKtQqVQ',
+			token: 's.9vur2yd82xfnZWKSRFPN3ZHL',
 		};
 		this._client = vault(options);
 	}

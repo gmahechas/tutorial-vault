@@ -7,8 +7,8 @@ const start = async () => {
 		/* 		const writePath = await vaultClient.write('kv/data/ms-0', { data: { mongo: 'mongouri', kafka: 'broker1' } });
 				console.log(writePath); */
 
-		/* 		const readPath = await vaultClient.read('kv/data/ms-0');
-				console.log(readPath); */
+				const readPath = await vaultClient.read('kv/data/erp/development/ms-0');
+				console.log(readPath);
 
 		/* 		const deletePath = await vaultClient.delete('kv/data/ms-0');
 				console.log(deletePath); */
