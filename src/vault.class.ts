@@ -8,15 +8,19 @@ export class Vault {
 		}
 		return this._client;
 	}
-	constructor() {
+
+	constructor(endpoint: string, token: string) {
 		const options: vault.VaultOptions = {
 			apiVersion: 'v1',
-			endpoint: 'http://10.1.0.229:8200',
-			token: 's.9vur2yd82xfnZWKSRFPN3ZHL',
+			endpoint,
+			token,
 		};
 		this._client = vault(options);
 	}
 
+	auth = async (role_id: string, secret_id: string) => {
+		return this.client.approleLogin({ role_id, secret_id});
+	}
 	write = async (path: string, data: any) => {
 		return await this.client.write(path, data);
 	}
